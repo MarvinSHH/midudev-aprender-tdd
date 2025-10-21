@@ -5,14 +5,16 @@ name: Práctica GitHub Actions Marvin
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   uthh:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: 'Hola mundo'
-      run: echo "Hola mundoo"
-
+      - name: "Hola mundo"
+        run: echo "Hola mundoo"
+      - name: Dime la fecha
+        run: date
+      - name: Muestrame el contenido del directorio
+        run: ls -la
